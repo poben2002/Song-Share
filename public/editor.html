@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Song Share Editor </title>
+    <link rel="stylesheet" href="css\editor.css">
+    <link rel="stylesheet" href="css\styles.css">
+    <script src="js\editor.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#">Profile</a> </li>
+            <li> <a href="#">Explore</a> </li>
+            <li> <a href="#">Post</a> </li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <label for="banner-upload" class="banner-upload-btn"><img src="images/upload.png" alt="upload banner"></label>
+    </div>
+
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+    </div>
+
+    <div class="blog-options">
+        <button class="btn dark publish-btn">publish</button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+    </div>
+    <hr>
+</body>
