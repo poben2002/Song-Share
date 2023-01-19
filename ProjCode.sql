@@ -1,3 +1,4 @@
+-- Using sample database
 USE INFO330_GROUP4MUS
 GO 
 
