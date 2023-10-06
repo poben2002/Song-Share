@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This section will be repeated later on other pages. -->
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/icon" href="img/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music custom playlist page">
+
+    <title>Artist Finder</title>
+
+    <link rel="stylesheet" href="css/styles.css?t=20230425">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This section will be removed and be repeated later using React components. 
+         DO NOT EDIT here. Please edit 'index.html' instead. -->
+    <header>
+        <nav>
+            <!-- Logo has changed because the previous one has copyright by LogoAI.
+                 For details, please see the CheckList Content and HTML Structure, Section #6, in the instruction on Canvas -->
+            <ul class="nav-bar">
+                <li class="nav-logo">
+                    <a href="./index.html">
+                        <img class="nav-logo-lg" src="img/logo.png" alt="Website Logo">
+                        <img class="nav-logo-sm" src="img/logo_small.png" alt="Website Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./search.html" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./recommendation.html" class="nav-link">Recommendation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./playlist.html" class="nav-link">Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:alert('Coming Soon!')" class="nav-link">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="playlist">
+            <h1>Playlists</h1>
+
+            <div class="playlist-search">
+                <form>
+                    <input class="playlist-search-bar" type="text" id="playlist-search" onkeyup="myOtherFunction()" placeholder="Search for playlists...">
+                </form>
+            </div>
+
+            <div class="flex-container">
+                <div class="playlist-auto">
+                    <p class="playlist-name">For You</p>
+                    <img src="img/cg.gif" alt="Album cover for Because the Internet">
+                    <p class="song-count">20 Songs</p>
+                    <p class="playlist-length"><time datetime="2h 15m">2:15:00</time></p>
+                    <div class="playlist-buttons">
+                        <a href="#" class="icons">playlist_play</a>
+                        <a href="#" class="icons">shuffle</a>
+                        <a href="#" class="icons">edit</a>
+                    </div>
+                </div>
+                <div class="playlist-1">
+                    <p class="playlist-name">My Playlist</p>
+                    <img src="img/yacht.png" alt="Album cover for Flowers">
+                    <p class="song-count">15 Songs</p>
+                    <p class="playlist-length"><time datetime="1h 45m">1:45:00</time></p>
+                    <div class="playlist-buttons">
+                        <a href="#" class="icons">playlist_play</a>
+                        <a href="#" class="icons">shuffle</a>
+                        <a href="#" class="icons">edit</a>
+                    </div>
+                </div>
+                <div class="playlist-blank">
+                    <p class="new-playlist">Create New Playlist</p>
+                    <img src="img/blonde.jpeg" alt="Album cover for Blonde">
+                    <div class="playlist-buttons">
+                        <a href="#" class="icons">playlist_add</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- This section will be removed and be repeated later using React components. 
+         DO NOT EDIT here. Please edit 'index.html' instead. -->
+    <footer>
+        <div class="footer-content">
+            <p>Informatics 340 BA Group Web Application created by Riley, Chris, Young, and Benny &copy; 2023.</p>
+            <p>This project is powered by the <a class="glow" href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library.</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

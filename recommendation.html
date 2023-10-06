@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This section will be repeated later on other pages. -->
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/icon" href="img/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Song recommendation page">
+
+    <title>Artist Finder</title>
+
+    <link rel="stylesheet" href="css/styles.css?t=20230426">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This section will be removed and be repeated later using React components. 
+         DO NOT EDIT here. Please edit 'index.html' instead. -->
+    <header>
+        <nav>
+            <!-- Logo has changed because the previous one has copyright by LogoAI.
+                 For details, please see the CheckList Content and HTML Structure, Section #6, in the instruction on Canvas -->
+            <ul class="nav-bar">
+                <li class="nav-logo">
+                    <a href="./index.html">
+                        <img class="nav-logo-lg" src="img/logo.png" alt="Website Logo">
+                        <img class="nav-logo-sm" src="img/logo_small.png" alt="Website Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./search.html" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./recommendation.html" class="nav-link">Recommendation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./playlist.html" class="nav-link">Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:alert('Coming Soon!')" class="nav-link">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter">
+            <h1>Music Recommendations</h1>
+            <p>Please move the bar to choose your favorite music style. The more the bar fills, the more you like that feature.</p>
+            <form>
+                <div class="filter-container">
+                    <div class="filter-element">
+                        <label for="filter_acousticness">Acousticness</label>
+                        <input id="filter_acousticness" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_danceability">Danceability</label>
+                        <input id="filter_danceability" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_energy">Energy</label>
+                        <input id="filter_energy" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_instrument">Instrument</label>
+                        <input id="filter_instrument" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_liveness">Liveness</label>
+                        <input id="filter_liveness" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_loudness">Loudness</label>
+                        <input id="filter_loudness" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_speechiness">Speechiness</label>
+                        <input id="filter_speechiness" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_valence">Valence</label>
+                        <input id="filter_valence" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-element">
+                        <label for="filter_high_tempo">High Tempo</label>
+                        <input id="filter_high_tempo" type="range" class="filter-input" min="0" max="4" step="1" value="2">
+                    </div>
+                    <div class="filter-submit">
+                        <input type="submit" class="filter-submit" value="Pick 5 songs">
+                    </div>                    
+                </div>
+            </form>
+        </section>
+
+        <section class="recommdation">
+            <h1>Music for You</h1>
+
+            <div class="recommdation-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="no">No</th>
+                            <th scope="col" class="cover">Cover</th>
+                            <th scope="col" class="song">Title</th>
+                            <th scope="col" class="year">Year</th>
+                            <th scope="col" class="popularity">Popularity</th>
+                            <th scope="col" class="match">Match</th>
+                        </tr>
+                    </thead>                    
+                    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="cover">
+                                <img src="https://i.scdn.co/image/db2133234d458f432ca207e163a801524a15f993" class="album" alt="Album cover image of Flowers">
+                            </td>
+                            <td class="song">
+                                <div class="song-title">Flowers</div>
+                                <div class="song-artist">Miley Cyrus</div>
+                            </td>
+                            <td class="year">2019</td>
+                            <td class="popularity"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"></td>
+                            <td>97%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="cover">
+                                <img src="https://i.scdn.co/image/2d6ee8d4fb5a45abf35cd3c05550f251f50538a6" class="album" alt="Album cover image of Last Night">
+                            </td>
+                            <td class="song">
+                                <div class="song-title">Last Night</div>
+                                <div class="song-artist">Morgan Wallen</div>
+                            </td>
+                            <td class="year">2020</td>
+                            <td class="popularity"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"></td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="cover">
+                                <img src="https://i.scdn.co/image/faae06ad0d0d0219c7b946d791479bda378bc1b2" class="album" alt="Album cover image of Kill Bill">
+                            </td>
+                            <td class="song">
+                                <div class="song-title">Kill Bill</div>
+                                <div class="song-artist">SZA</div>
+                            </td>
+                            <td class="year">2021</td>
+                            <td class="popularity"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"></td>
+                            <td>96%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="cover">
+                                <img src="https://i.scdn.co/image/2e70e7b198acc3bb03aaba9424c5fb23fb38c536" class="album" alt="Album cover image of Creepin'">
+                            </td>
+                            <td class="song">
+                                <div class="song-title">Creepin'</div>
+                                <div class="song-artist">Metro Boomin, The Weeknd & 21 Savage</div>
+                            </td>
+                            <td class="year">2023</td>
+                            <td class="popularity"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"></td>
+                            <td>93%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="cover">
+                                <img src="https://i.scdn.co/image/5232b1dcb43188537b7f9f1e77cad1f9a38870d1" class="album" alt="Album cover image of Die For You">
+                            </td>
+                            <td class="song">
+                                <div class="song-title">Die For You</div>
+                                <div class="song-artist">The Weeknd & Ariana Grande</div>
+                            </td>
+                            <td class="year">2022</td>
+                            <td class="popularity"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"><img src="img/star.svg" alt="Star"></td>
+                            <td>99%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- This section will be removed and be repeated later using React components. 
+         DO NOT EDIT here. Please edit 'index.html' instead. -->
+    <footer>
+        <div class="footer-content">
+            <p>Informatics 340 BA Group Web Application created by Riley, Chris, Young, and Benny &copy; 2023.</p>
+            <p>This project is powered by the <a class="glow" href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library.</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

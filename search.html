@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/icon" href="img/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music search page">
+
+    <title>Artist Finder</title>
+
+    <link rel="stylesheet" href="css/styles.css?t=20230426">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This section will be repeated later on other pages. -->
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-logo">
+                    <a href="./index.html">
+                        <img class="nav-logo-lg" src="img/logo.png" alt="Website Logo">
+                        <img class="nav-logo-sm" src="img/logo_small.png" alt="Website Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./search.html" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./recommendation.html" class="nav-link">Recommendation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./playlist.html" class="nav-link">Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:alert('Coming Soon!')" class="nav-link">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Music Search</h1>
+        <img class="searchimg" src="img/songsearch.png" alt="Song Search Logo">
+        <hr class="dividergreen">
+        <div class="boxSearchFunc">
+            <div class="search">
+                <form>
+                    <h2>Search Bar</h2>
+                    <input class="musicSearchBar" type="text" id="musicSearch" placeholder="Search for music">
+                    <h2>Filters</h2>
+
+                    <input id="search_filter_recent" class="search-filter" type="checkbox" data-attribute="category" data-value="Recent" data-group="categories">
+                    <label for="search_filter_recent">Recent</label>
+
+                    <input id="search_filter_country" class="search-filter" type="checkbox" data-attribute="category" data-value="Country" data-group="categories">
+                    <label for="search_filter_country">Country</label>
+
+                    <input id="search_filter_hiphop" class="search-filter" type="checkbox" data-attribute="category" data-value="Hip-Hop" data-group="categories">
+                    <label for="search_filter_hiphop">Hip-Hop</label>
+
+                    <input id="search_filter_rnb" class="search-filter" type="checkbox" data-attribute="category" data-value="RnB" data-group="categories">
+                    <label for="search_filter_rnb">RnB</label>
+
+                    <input id="search_filter_rock" class="search-filter" type="checkbox" data-attribute="category" data-value="Rock" data-group="categories">
+                    <label for="search_filter_rock">Rock</label>
+
+                    <input id="search_filter_jazz" class="search-filter" type="checkbox" data-attribute="category" data-value="Jazz" data-group="categories">
+                    <label for="search_filter_jazz">Jazz</label>
+
+                    <input id="search_filter_single" class="search-filter" type="checkbox" data-attribute="category" data-value="Single" data-group="categories">
+                    <label for="search_filter_single">Single</label>
+
+                    <p class="filterinfo">Select one or multiple filters to search our Music Database!</p>
+                </form>
+            </div>
+
+            <div class="results">
+                <h2> Results </h2>
+                <table class="resultsTbl">
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Artist</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Album</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank"> 1 </td>
+                            <td> Frank Ocean </td>
+                            <td> Nikes </td>
+                            <td> <a href="https://www.youtube.com/watch?v=diIFhc_Kzng" target="_blank"><img src="img/blonde.jpeg" alt="Blonde Album Cover"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="rank"> 2 </td>
+                            <td> Kanye West </td>
+                            <td> Ghost Town </td>
+                            <td> <a href="https://www.youtube.com/watch?v=qAsHVwl-MU4" target="_blank"><img src="img/ye.jpg" alt="Ghost Town Album Cover"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="rank"> 3 </td>
+                            <td> Lil Yachty </td>
+                            <td> the ride- </td>
+                            <td> <a href="https://www.youtube.com/watch?v=qSemB-pfR2c" target="_blank"><img src="img/yacht.png" alt="Let's Start Here Album Cover"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="rank"> 4 </td>
+                            <td> Childish Gambino </td>
+                            <td> III. Telegraph Ave. ("Oakland" By Lloyd) </td>
+                            <td> <a href="https://www.youtube.com/watch?v=VB9DA7Caw6E" target="_blank"><img src="img/cg.gif" alt="Because the Internet Album Cover"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="rank"> 5 </td>
+                            <td> Seulgi </td>
+                            <td> Los Angeles </td>
+                            <td> <a href="https://www.youtube.com/watch?v=h1lH4LjCXxc" target="_blank"><img src="img/seul.png" alt="28 Reasons Album Cover"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- This section will be repeated later on other pages. -->
+    <footer>
+        <div class="footer-content">
+            <p>Informatics 340 BA Group Web Application created by Riley, Chris, Young, and Benny &copy; 2023.</p>
+            <p>This project is powered by the <a class="glow" href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library.</a></p>
+        </div>
+    </footer>
+</body>

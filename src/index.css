@@ -1,0 +1,1041 @@
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* General CSS design codes */
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: "Bungee", Arial, sans-serif;
+    line-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #404040;
+    background-color: #F0F7EE;
+    margin: 0;
+}
+
+header {
+    display: block;
+    width: 100%;
+    font-family: "Bungee", Arial, sans-serif;
+}
+
+main {
+    display: block;
+    margin: 12rem 0 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.small-font {
+    font-family: "Poppins", Helvetica, sans-serif;
+    line-height: 120%;
+}
+
+/* Nav selectors (logo, container, flex elements, links/hover, sm/lg image) */
+nav {
+    background: #508050;
+    position: fixed;
+    text-align: left;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-logo {
+    display: inline;
+    margin: 0 2rem 0 0;
+}
+
+.nav-bar {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 0;
+}
+
+.nav-item {
+    display: grid;
+    line-height: 130%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    color: #FFFFFF;
+}
+
+.nav-item a:hover {
+    color: #C0C0C0;
+}
+
+.nav-logo-lg {
+    width: 271px;
+    display: inline;
+}
+
+.nav-logo-sm {
+    width: 57px;
+    display: none;
+}
+
+
+.song-link {
+    text-decoration: underline;
+    color: #404040;
+}
+
+.song-link:hover {
+    color: #2c812c;
+}
+
+
+/* Header title section. */
+.main-title {
+    margin: 9rem auto 2rem;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Features flexbox selector and children/cards. */
+.features {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.features .card {
+    background-color: #D7EAD2;
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 300px;
+    min-height: 400px;
+
+    width: 95%;
+    margin-bottom: 2em;
+}
+
+.features .card img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.features .card img:hover {
+    transform: scale(1.005);
+}
+
+.features .card a {
+    color: #606060;
+}
+
+.search-filter,
+.recommdation {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 150%;
+    color: #5A5A5A;
+}
+
+.search-filter {
+    margin-top: 1.0rem;
+    transform: scale(1.5);
+    display: inline;
+}
+
+.searchTitle {
+    min-width: 380px;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.searchResult {
+    min-width: 350px;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    padding: 10px;
+}
+
+.filter {
+    margin: 1rem;
+}
+
+.flex-container,
+.filter-container,
+.recommdation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.flex-container {
+    border-style: none;
+    background-color: #F0F7EE;
+}
+
+.filter-container label {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-right: 1rem;
+    display: inline;
+
+}
+
+.filter-container .filter-element {
+    padding: 10px;
+    margin: 0rem 1rem 0rem 1rem;
+
+    min-width: 280px;
+    width: 40%;
+    justify-content: space-around;
+
+    display: inline;
+    white-space: nowrap;
+}
+
+.filter-container .filter-input {
+    margin-left: 3rem;
+    transform: scale(1.5);
+
+    min-width: 60px;
+    width: 40%;
+}
+
+.filter-container div.filter-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.submit-button {
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: #2c812c;
+    color: white;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #185f18;
+}
+
+.cancel-button {
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: #727272;
+    color: white;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #444444;
+}
+
+.delete-button {
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: #e0850e;
+    color: white;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #b87216;
+}
+
+.song-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommdation {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 150%;
+    color: #5A5A5A;
+}
+
+.recommdation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.recommdation {
+    width: 100%;
+    border-color: #404040;
+}
+
+.recommdation table {
+    width: 100%;
+    border-color: #404040;
+    border-collapse: collapse;
+    margin: 0;
+}    
+
+.recommdation table td {
+    padding: 0.25rem;
+}
+
+.recommdation table thead {
+    background-color: #E9E9E9;
+    height: 35px;
+}
+
+.recommdation table thead th {
+    padding: 0 0.5rem;
+}
+
+.recommdation table thead th:nth-child(2) {
+    width: 100px;
+}
+
+.recommdation table .cover img {
+    width: 100px;
+}
+
+.recommdation table tbody .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommdation table .popularity img {
+    width: 15px;
+}
+
+.recommdation table .year,
+.recommdation table .followers,
+.recommdation table .popularity {
+    display: none
+}
+
+.recommdation table tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+.recommdation table .song {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.recommdation .album {
+    height:100px;
+}
+
+.song-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Test page selectors */
+.testpage-section {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 120%;
+    color: #5A5A5A;
+}
+
+.testpage-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: left;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* Playlist selectors */
+.playlist {
+    display: grid;
+    justify-items: center;
+    font-family: "Bungee", Arial, sans-serif;
+}
+
+.playlist-filter,
+.playlist-list {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 150%;
+    color: #5A5A5A;
+}
+
+.playlist-filter-container,
+.playlist-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.playlist-filter-container {
+    padding: 10px 15px;
+}
+
+.playlist-search {
+    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-list-container table {
+    width: 100%;
+    border-color: #404040;
+    border-collapse: collapse;
+    margin: 0;
+}    
+
+.playlist-list-container table td {
+    padding: 0.25rem;
+}
+
+.playlist-list-container table thead {
+    background-color: #E9E9E9;
+    height: 35px;
+}
+
+.playlist-list-container table thead th {
+    padding: 0 0.5rem;
+}
+
+.playlist-list-container table thead th:nth-child(2) {
+    width: 100px;
+}
+
+.playlist-list-container table .cover img {
+    width: 100px;
+}
+
+.playlist-list-container table tbody .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-list-container table .popularity img {
+    width: 15px;
+}
+
+.playlist-list-container table .action {
+    display: table-cell;
+}
+
+.playlist-list-container table .delete,
+.playlist-list-container table .genre,
+.playlist-list-container table .duration,
+.playlist-list-container table .play {
+    display: none;
+    width: 10%;
+}
+
+.playlist-list-container table .action-button {
+    width: 45px;
+}
+
+.playlist-list-container table tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+.playlist-list-container table .song {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.playlist-list-container .album {
+    height:100px;
+}
+
+/* Footer selectors (footers stay the same across pages). */
+footer {
+    background-color: #DADADA;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 2rem 0 0;
+
+    display: relative;
+    position: relative;
+}
+
+.footer-content {
+    line-height: 90%;
+    padding: 0.5rem;
+}
+
+/* Articles and div selectors for hovering/highlighting/glowing elements. */
+a {
+    text-decoration: none;
+    color: auto;
+}
+
+a.glow,
+div.glow {
+    text-decoration: none;
+    position: relative;
+}
+
+a.glow::after,
+div.glow::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+div.glow::after {
+    /* to overwrite specific properties above */
+    height: 5px;
+    background-color: #508050;
+}
+
+a.glow:hover::after,
+div.glow:hover::after {
+    transform: scaleX(1);
+    animation: glow 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px white;
+    }
+
+    to {
+        box-shadow: 0 0 20px white;
+    }
+}
+
+.playlist .icons {
+    font-family: 'Material Icons', sans-serif;
+    font-size: 48px;
+    position: relative;
+    background-color: #d3d3d3;
+    border: #404040;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.cover {
+    width: fit-content;
+}
+
+.playlist .flex-container div {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.playlist-filter-container input {
+    width: 240px;
+    height: 40px;
+    margin: 10px 5px 5px 5px;
+}
+
+
+/* Search CSS, lmk if there is any redundancy i missed */
+.searchImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 128px;
+    width: 170px;
+    border-radius: 20%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.musicSearchBar {
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+}
+
+.dividergreen {
+    border: 3px solid green;
+    border-radius: 3px;
+    margin: 40px 15px;
+}
+
+.boxSearchFunc {
+    align-items: stretch;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    display: grid;
+}
+
+.search {
+    min-width: 200px;
+    display: block;
+
+    width: 90%;
+}
+
+.filterinfo {
+    display: none;
+}
+
+.results {
+    min-width: 200px;
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.resultsTbl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resultsTbl th {
+    height: 2rem;
+    text-align: center;
+    color: #175a2f;
+    background-color: #d3d3d3;
+}
+
+.resultsTbl img {
+    height: 100px;
+    width: 100px;
+}
+
+.resultsTbl td,
+.resultsTbl th {
+    padding: .5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.resultsTbl .search-details {
+    display: none;
+}
+
+.resultsTbl tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.resultsTbl tbody tr:hover {
+    background-color: #bcdabc;
+}
+
+
+/* Modal sections */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+.modal-container {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    min-width: 350px;
+
+    flex-direction: column;    
+    transform: none;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+
+    border-color: #a5c99b;
+    border-width: 0.3rem;
+    border-radius: 1rem;
+    border-style: dashed;
+
+    transform: translate(-50%, -50%);
+}
+
+.modal-container hr {
+    width: 100%;
+    padding: 0 1rem 0 0;
+}
+
+.modal-container-background {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-around;
+    height: 100%;
+
+    padding: 1rem 0 2rem 0;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+    color: white;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 30%;
+}
+
+.modal-container-title {
+    padding: 0 0 0.5rem 1rem;
+}
+
+.modal-container-title .song-title {
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+.modal-container-contents-single-line {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 150%;    
+    padding: 0.75rem 0 0 1.25rem;
+}
+
+.modal-container-contents-twice-line {
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.modal-container-contents-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.modal-container-contents-tags .tag {
+    background-color: rgba(128, 128, 0, 0.7);
+    border-radius: 0.5rem;
+    padding: 0rem 0.75rem;
+    margin: 0.5rem 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+
+.modal-container-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0.25rem 0;
+}
+
+.modal-container-contents .song-feature {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.modal-container-contents table {
+    width: 100%;
+}
+
+.modal-container-contents td {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}
+
+.modal-container-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.modal-container-buttons input {
+    width: 240px;
+    height: 40px;
+    margin: 10px 5px 5px 5px;
+}
+
+.modal-heading {
+    margin: 1rem;
+}
+
+.modal-container .small-star {
+    width: 18px;
+    margin-bottom: -3px;
+}
+
+.login-messages {
+    padding: 0.5rem 0.5rem;
+}
+
+.login-buttons {
+    padding: 0.2rem 0.5rem;
+}
+
+/* For medium size. Use small logo */
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 2.0rem;
+    }
+
+    .filterinfo {
+        display: block;
+        font-weight: bold;
+    }
+
+    main {
+        margin: 7rem 0 2rem;
+    }
+
+    footer {
+        display: relative;
+        position: relative;
+    }
+
+    .nav-logo {
+        display: inline;
+        margin: 0.5rem 2rem 0 0.5rem;
+    }
+    
+    .nav-logo-lg {
+        display: none;
+    }
+
+    .nav-logo-sm {
+        display: inline;
+    }
+
+    .nav-bar {
+        padding-top: 0.5rem;
+    }
+
+    .nav-item {
+        display: inline;
+        line-height: 180%;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .filter-container .filter-element {
+        margin: 0rem 1rem 1rem 1rem;
+        min-width: 0px;
+        width: 30%;
+    }
+
+    .filter-container .filter-input {
+        min-width: 0px;
+        width: 45%;
+    }
+
+    .features .card {
+        margin-bottom: 1em;
+        width: 30%;
+    }
+
+
+    .recommdation table .duration,
+    .recommdation table .followers,
+    .recommdation table .popularity {
+        display: table-cell;
+    }
+
+    .recommdation table .song {
+        padding-left: 2rem;
+    }    
+    
+    .song-title {
+        font-weight: 600;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .boxSearchFunc {
+        display: flex;
+    }
+
+    .search {
+        width: 40%;
+    }
+
+    .searchImg {
+        height: 175px;
+        width: 210px;
+    }
+
+    .resultsTbl .search-details {
+        display: table-cell;
+    }
+    
+    .results {
+        width: 50%;
+        padding-top: 0rem;
+    }
+
+    .modal-container {
+        max-width: 600px;
+        width: 100%;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+    .modal-container-contents {        
+        margin: 0.5rem 0;
+    }
+
+    .modal-container-contents-twice-line {
+        font-size: 1.0rem;
+        padding: 1rem 3rem 0 3rem;
+    }
+
+    .playlist-list-container table .action {
+        display: none;
+    }
+    
+    .playlist-list-container table .delete,
+    .playlist-list-container table .genre,
+    .playlist-list-container table .duration,
+    .playlist-list-container table .play {
+        display: table-cell;
+    }
+
+    .playlist-list-container table .song {
+        padding-left: 2rem;
+    }
+    
+    .playlist-list-container table .action-button {
+        width: 55px;
+    }
+
+    .playlist-filter-container {
+        padding: 10px 30px;
+    }   
+}
+
+/* For large size */
+@media (min-width: 1024px) {
+    .nav-logo-lg {
+        display: inline;
+    }
+
+    .nav-logo-sm {
+        display: none;
+    }
+
+    .filter-container .filter-input {
+        max-width: 200px;
+    }
+}

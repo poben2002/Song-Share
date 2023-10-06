@@ -1,0 +1,622 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: "Bungee", Arial, sans-serif;
+    line-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #404040;
+    background-color: #F0F7EE;
+    margin: 0;
+}
+
+header {
+    display: block;
+    width: 100%;
+    font-family: "Bungee", Arial, sans-serif;
+}
+
+main {
+    display: block;
+    margin: 15rem 0 5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/** nav selectors (logo, container, flex elements, links/hover, sm/lg image) **/
+nav {
+    background: #508050;
+    position: fixed;
+    text-align: left;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-logo {
+    display: inline;
+    margin: 0.5rem 2rem 0 0.5rem;
+}
+
+.nav-bar {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 0;
+}
+
+.nav-item {
+    display: grid;
+    line-height: 180%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    color: #FFFFFF;
+}
+
+.nav-item a:hover {
+    color: #C0C0C0;
+}
+
+.nav-logo-lg {
+    width: 271px;
+    display: inline;
+}
+
+.nav-logo-sm {
+    width: 57px;
+    display: none;
+}
+
+
+/** header title section. **/
+.main-title {
+    margin: 9rem auto 2rem;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 2.0rem;
+}
+
+/** features flexbox selector and children/cards.  **/
+.features {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.features .card {
+    background-color: #D7EAD2;
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 300px;
+    min-height: 400px;
+
+    width: 95%;
+    margin-bottom: 2em;
+}
+
+.features .card img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.features .card img:hover {
+    transform: scale(1.005);
+}
+
+.features .card a {
+    color: #606060;
+}
+
+.search-filter,
+.recommdation {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 150%;
+    color: #5A5A5A;
+}
+
+.search-filter {
+    margin-top: 1.0rem;
+    transform: scale(1.5);
+    display: inline;
+}
+
+.filter {
+    margin: 1rem;
+}
+
+.flex-container,
+.filter-container,
+.recommdation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.flex-container {
+    border-style: none;
+    background-color: #F0F7EE;
+}
+
+.filter-container label {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-right: 1rem;
+    display: inline;
+
+}
+
+.filter-container .filter-element {
+    padding: 10px;
+    margin: 0rem 1rem 1rem 1rem;
+
+    min-width: 200px;
+    width: 40%;
+    justify-content: space-around;
+
+    display: inline;
+    white-space: nowrap;
+}
+
+.filter-container .filter-input {
+    margin-left: 3rem;
+    transform: scale(1.5);
+
+    min-width: 60px;
+    width: 40%;
+}
+
+.filter-container div.filter-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.filter-container input.filter-submit {
+    border-radius: 0.5rem;
+    width: 200px;
+    height: 35px;
+    border: none;
+    background-color: #2c812c;
+    color: white;
+    font-family: "Bungee", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 100%;
+}
+
+.filter-container input.filter-submit:hover {
+    background-color: #185f18;
+}
+
+.recommdation {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    justify-content: left;
+    line-height: 150%;
+    color: #5A5A5A;
+}
+
+.recommdation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+    justify-content: space-around;
+
+    min-width: 350px;
+    background-color: white;
+    border-color: #D7EAD2;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.recommdation table {
+    width: 100%;
+    border-color: #404040;
+    border-collapse: collapse;
+}
+
+.recommdation {
+    width: 100%;
+    border-color: #404040;
+}
+
+.recommdation table {
+    margin: 0;
+}
+
+.recommdation table td {
+    padding: 0.25rem;
+}
+
+.recommdation table thead {
+    background-color: #E9E9E9;
+    height: 35px;
+}
+
+.recommdation table thead th {
+    padding: 0 0.5rem;
+}
+
+.recommdation table thead th:nth-child(2) {
+    width: 100px;
+}
+
+.recommdation table .cover img {
+    width: 100px;
+}
+
+.recommdation table tbody .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommdation table .popularity img {
+    width: 15px;
+}
+
+.recommdation table .year,
+.recommdation table .popularity {
+    display: none
+}
+
+.recommdation table tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+.recommdation table .song {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.recommdation table .song .song-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+/** playlist selectors **/
+
+.playlist {
+    display: grid;
+    justify-items: center;
+    font-family: "Bungee", Arial, sans-serif;
+}
+
+.playlist-search-bar {
+    width: 30%;
+
+}
+
+.playlist-search {
+    width: 100%;
+    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/** footer selectors (footers stay the same across pages). **/
+footer {
+    background-color: #DADADA;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 3rem 0 0;
+
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-content {
+    line-height: 90%;
+    padding: 0.5rem;
+}
+
+/** articles and div selectors for hovering/highlighting/glowing elements. **/
+a {
+    text-decoration: none;
+    color: auto;
+}
+
+a.glow,
+div.glow {
+    text-decoration: none;
+    position: relative;
+}
+
+a.glow::after,
+div.glow::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+div.glow::after {
+    /* to overwrite specific properties above */
+    height: 5px;
+    background-color: #508050;
+}
+
+a.glow:hover::after,
+div.glow:hover::after {
+    transform: scaleX(1);
+    animation: glow 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px white;
+    }
+
+    to {
+        box-shadow: 0 0 20px white;
+    }
+}
+
+.playlist .icons {
+    font-family: 'Material Icons', sans-serif;
+    font-size: 48px;
+    position: relative;
+    background-color: #d3d3d3;
+    border: #404040;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.cover {
+    width: fit-content;
+}
+
+.playlist .flex-container div {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Search CSS, lmk if there is any redundancy i missed */
+.searchimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 175px;
+    width: 210px;
+    border-radius: 50%;
+}
+
+.musicSearchBar {
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    width: 90%;
+}
+
+.dividergreen {
+    border: 3px solid green;
+    border-radius: 3px;
+    margin: 40px 15px;
+}
+
+.boxSearchFunc {
+    align-items: stretch;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    display: grid;
+}
+
+.search {
+    min-width: 200px;
+    display: block;
+
+    width: 90%;
+}
+
+.filterinfo {
+    display: none;
+}
+
+.results {
+    min-width: 200px;
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.resultsTbl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.resultsTbl th {
+    height: 2rem;
+    text-align: center;
+    color: #1db954;
+    background-color: #d3d3d3;
+}
+
+.resultsTbl img {
+    height: 100px;
+    width: 100px;
+}
+
+.resultsTbl td,
+.resultsTbl th {
+    padding: .5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.resultsTbl tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.resultsTbl tbody tr:hover {
+    background-color: pink;
+}
+
+/* For medium size. Use small logo */
+@media (min-width: 768px) {
+    .filterinfo {
+        display: block;
+        font-weight: bold;
+    }
+
+    main {
+        margin: 7rem 0 2rem;
+    }
+
+    footer {
+        display: relative;
+        position: relative;
+    }
+
+    .nav-logo-lg {
+        display: none;
+    }
+
+    .nav-logo-sm {
+        display: inline;
+    }
+
+    .nav-bar {
+        padding-top: 0.5rem;
+    }
+
+    .nav-item {
+        display: inline;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .filter-container .filter-element {
+        margin: 0rem 1rem 1rem 1rem;
+        min-width: 0px;
+        width: 30%;
+    }
+
+    .filter-container .filter-input {
+        min-width: 0px;
+        width: 45%;
+    }
+
+    .features .card {
+        margin-bottom: 1em;
+        width: 30%;
+    }
+
+
+    .recommdation table .year,
+    .recommdation table .popularity {
+        display: table-cell;
+    }
+
+    .boxSearchFunc {
+        display: flex;
+    }
+
+    .search {
+        width: 40%;
+    }
+
+    .results {
+        width: 50%;
+        padding-top: 0rem;
+    }
+}
+
+/* For large size */
+@media (min-width: 1024px) {
+    .nav-logo-lg {
+        display: inline;
+    }
+
+    .nav-logo-sm {
+        display: none;
+    }
+
+}
+
+/*
+The following styles as well as some redundant styles have removed.
+We should not use detailed styles for representative tags.
+Please define proper classes together. (e.g., `a.glow`, `.nav-item a`)
+Otherwise, the representative style affects all designs that others work or already worked on.
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+    max-height: 200px;     // For example, we don't want to limit height for all the images on website.
+}
+
+hr {
+    border: 10px solid #b4c6a7;
+    border-radius: 10px;
+    margin: 40px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.....
+*/

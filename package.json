@@ -1,17 +1,46 @@
 {
-  "name": "songshare",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "project-cjohn444",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express-fileupload": "^1.2.1",
-    "express.js": "^1.0.0",
-    "firebase": "^9.15.0",
-    "nodemon": "^2.0.12"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "d3-fetch": "^3.0.1",
+    "firebase": "^9.22.1",
+    "json5": "^2.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-firebaseui": "https://gitpkg.now.sh/gvillenave/firebaseui-web-react/dist",
+    "react-router-dom": "^6.4.0",
+    "react-scripts": "5.0.1",
+    "sweetalert2": "^11.7.5",
+    "sweetalert2-react-content": "^5.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

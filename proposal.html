@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proposal</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/proposal.css">
+</head>
+
+<body>
+    <header>
+        <h1> Music Platform Website Proposal </h1>
+    </header>
+
+    <main>
+        <img src="img/logo.png" alt="Potential Website Logo">
+
+        <hr class="division">
+
+        <section>
+            <h2>Problem Statement</h2>
+            <p>
+                For smaller musical artists trying to find an audience and get their music exposure, it can be extremely difficult for them to compete with mainstream artists who have expensive promotions and a large existing fanbase. Independent artists who start out without a label to promote them face serious financial and exposure problems, and according to a study done by <a href="https://www.artshub.com.au/news/news/51-of-indie-artists-considering-a-career-change-says-new-report-2599284/" target="_blank">ArtsHub</a>, 51% of independent artists quit full-time music within one year. One major cause of this problem is that most major music streaming platforms such as Spotify or Apple Music have music recommendation algorithms that favor artists who are already popular and quickly rising in popularity. This creates a loop where artists who already have a dedicated fanbase have their music promoted more and more, gaining more fans while taking away possible listeners from artists just getting started or with much smaller fanbases. While platforms like Spotify do have features to try and give exposure to newer or lesser known artists and there are some applications like <a href="https://soundcloud.com/" target="_blank">SoundCloud</a> to help promote artists with smaller budgets, only a small handful of these artists ever gain major traction or success. Creating a website specifically focused on promoting newer and smaller artists by looking at genres or songs that a listener likes, and recommending songs by lesser known artists with similar styles would help smaller musicians quickly gain a fanbase without large financial investments or advertisements.
+            </p>
+        </section>
+
+        <hr class="division">
+
+        <section>
+            <h2>App Description</h2>
+
+            <div>
+                <p>
+                    Listings based on popular rankings are hard to solve these problems. We will display and recommend the most suitable independent musicians' music according to each user's chosen taste. The app will have the following features:
+                </p>
+            </div>
+
+            <div>
+                <ol>
+                    <li>
+                        <p class="list_title">
+                            Song Recommendations
+                        </p>
+                        <p>
+                            One way to interact with our application will be through our music or song recommendation function. Like a survey, users will fill in answers to a few abstract questions such as genres/subgenres of interest, tempo, popularity, release date, explicit or clean word choice. With whichever questions are answered the function will return a song catering to the answers for the user to listen to. Utilizing CSV files from the <a href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library</a>, a sussinct report aiming to encapsulate the answers given by the user into one track provided by the database to be displayed. Visually, the page containing this method will first display the assortment of widgets for the user to interact with and make their own judgements for what they are listening for. Upon submission of the form, the page will update to show the interactive survey on the left half, leaving the right half to display the song recommendation report. Resubmitting the form with or without the same results should end up displaying a new track.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="list_title">
+                            Music Search Function
+                        </p>
+                        <p>
+                            This is a general music search function. The site displays the music of independent musicians according to the user's preferences. The menu has a search filter on the left side, and the searched music is listed in the form of a card with image thumbnails or text on the right side. When the user selects the desired conditions in the search filter, the site queries the database in the backend and retrieves searched music using React/Ajax, and it interactively displays them on the screen without refreshing the screen. We expect to be able to rank the display order by weighting the percentage of matches. For this function, we will build a database using Firebase, which we will learn about soon. The database will consist of exported CSV data from several music information sites, such as <a href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet</a>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="list_title">
+                            Playlist Generator Function
+                        </p>
+                        <p>
+                            In order to promote relistening of the artists that are recommended, this function aims to create a list of songs that pertain to the users interests (e.g., the parameter weights used to generate the playlist). The site displays options on the left side of the screen, the user will then be able to manipulate the weights of the features such as preferred genres, songs, artists, albums, number of songs, and date range to generate the playlist with. Upon submission of parameters, the right side of the site will display the list consisting of the artist, artist popularity (number of plays), the track name, its length, its genre, release year, and cover image (if no track image, an image of the artist may be used.). Implementation of this method will be done by querying the music database and searching for a set number of tracks that fits the users input form. We can then use the users preference to parse the data for tracks that fit the bill; from this set of tracks, songs are randomly added until the playlist length decided on by the user is reached. The next step would be to render the resulting form on the right panel of the screen with the aforementioned features. This function will work similarly to the Music Search in that it will be working with data sourced from Firebase, of which we have not learned yet. Playlist Generator will feature data sourced from exported CSV files from a website like the <a href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library</a>.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <p>
+                    Those accessing this application will range from artists to music listeners as it serves to invite those who seek to listen to unvoiced artists that are lost in the noise caused by popular creators. This application may greatly impact minority artists that are trying to grow their platform after failing to do so with modern tech giants like Spotify or Soundcloud. Users will have the opportunity to interact with music data in a few ways, not limited to: generating playlists, searching artists, and making song recommendations. The sites provide song recommendations with a users survey data and act as both a search engine for artists at an individual level and an extensive list of songs based off of users preferences using a database of music similar to <a href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library</a>. The information produced as a result of this application will be very succinct descriptions of artists and their music as determined by the <a href="https://marianaossilva.github.io/DSW2019/#downloads" target="_blank">MusicOSet Library</a>. The application will address the issue of vocalizing unappreciated and underlooked artists through making it a priority to recommend them instead of mainstream artists.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
